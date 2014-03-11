@@ -1,0 +1,220 @@
+/**
+ * Author: Ash
+ * Created: 2014/03/09
+ * ===================
+ * - Text
+ * - Headings
+ * - List
+ * - Blockquote
+ * - Table
+ */
+
+
+/** Text =========================== **/
+
+html {
+  color: @text-color;
+  font-size: @font-base;
+  line-height: @line-base;
+}
+
+::-moz-selection {
+  background-color: @color-primary;
+  color: #fff;
+}
+
+::selection {
+  background-color: @color-primary;
+  color: #fff;
+}
+
+//  Text end -----------------------  //
+
+
+/** Headings ======================= **/
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  line-height: (@line-base * 2);
+  margin: 0;
+}
+
+h1 {
+  color: @h1-color;
+  font-size: @h1-font-size;
+}
+
+h2 {
+  color: @h2-color;
+  font-size: @h2-font-size;
+}
+
+h3 {
+  color: @h3-color;
+  font-size: @h3-font-size;
+}
+
+//  Headings end -------------------  //
+
+
+/** Text ========================== **/
+
+p,
+ol,
+ul,
+dl,
+blockquote {
+  margin: @para-margin 0 0;
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+//  Text end ----------------------  //
+
+
+/** Link ========================== **/
+
+a {
+
+  &:link,
+  &:visited {
+    color: @link-color;
+  }
+
+  &:hover,
+  &:active {
+    color: @link-hover-color;
+  }
+}
+
+//  Link end ----------------------  //
+
+
+/** List ========================== **/
+
+ol,
+ul {
+  line-height: @list-height;
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul {
+
+  &.list-highlight {
+    list-style: none;
+
+    > li {
+
+      &:before {
+        content: "•";
+        color: @list-highlight-dot;
+        font-size: 2em;
+        margin-right: 0.25em;
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  &.list-compact {
+    list-style: none;
+    line-height: @list-compact-height;
+
+    > li {
+
+      &:before {
+        content: "-";
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+dl {
+  &:extend(.clearfix all);
+}
+
+dt,
+dd {
+  float: left;
+}
+
+dt {
+  clear: left;
+}
+
+dd {
+  margin-left: @dd-margin-left;
+}
+
+//  List end ----------------------  //
+
+
+/** Blockquote ==================== **/
+
+blockquote {
+  padding: @blockquote-top-padding 0;
+
+  > p {
+    font-size: @blockquote-font-size;
+  }
+
+  > cite {
+    display: block;
+    margin-top: @blockquote-cite-margin-top;
+
+    &:before {
+      content: "--";
+      margin-right: 0.5em;
+    }
+  }
+}
+
+//  Blockquote end ----------------  //
+
+
+/** Table ========================= **/
+
+td,
+th {
+  padding: @td-top-padding @padding-base;
+}
+
+th {
+  background-color: @th-bg;
+}
+
+tbody {
+
+  > tr {
+
+    &.table-alt {
+
+      > td {
+        background-color: @td-alt-bg;
+      }
+    }
+
+    &:nth-child(2n) {
+
+      > td {
+        background-color: @td-alt-bg;
+      }
+    }
+
+    &:hover {
+
+      > td {
+        background-color: @td-hover-bg;
+        color: @td-hover-color;
+      }
+    }
+  }
+}
+
+//  Table end ---------------------  //

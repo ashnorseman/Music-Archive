@@ -1,0 +1,631 @@
+{% extends "layout.html" %}
+
+{% block ownStyles %}
+<link rel="stylesheet" href="/css/temp.css">
+{% endblock %}
+
+{% block content %}
+
+<h1>Design System</h1>
+
+<section id="typography">
+  <h2>Typography</h2>
+
+  <section id="typography-headings">
+    <h3>Headings</h3>
+
+    <div class="example">
+      <h1>H1 heading</h1>
+      <h2>H2 heading</h2>
+      <h3>H3 heading</h3>
+    </div><!-- /.example -->
+  </section><!-- /#typography-headings -->
+
+  <section id="typography-text">
+    <h3>Text</h3>
+
+    <div class="example">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, impedit, blanditiis, nobis, odio deserunt atque repudiandae ullam praesentium quidem nisi fuga iusto dolorum ut alias accusantium officia eos. Vitae, cum.</p>
+      <p>Doloribus, sapiente, dicta, debitis harum officiis eveniet libero veniam consequatur aliquam laudantium facere hic quae incidunt quo totam architecto exercitationem quis dolore optio facilis similique. Nemo, placeat saepe esse provident.</p>
+    </div><!-- /.example -->
+  </section><!-- /#typography-text -->
+
+  <section id="typography-link">
+    <h3>Link</h3>
+
+    <div class="example">
+      <p><a href="javascript:void(0);">Read more <i class="fa fa-angle-right"></i></a></p>
+    </div><!-- /.example -->
+  </section><!-- /#typography-link -->
+
+  <section id="typography-list">
+    <h3>List</h3>
+
+    <h4>Ordered List</h4>
+
+    <div class="example">
+      <ol>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, consequuntur.</li>
+        <li>Animi, facere non vel doloribus incidunt impedit molestiae asperiores enim.</li>
+        <li>Sunt iure dicta quae doloribus rerum nostrum iste architecto deserunt!</li>
+        <li>Velit tenetur commodi explicabo incidunt culpa reiciendis sed ullam nihil!</li>
+      </ol>
+    </div><!-- /.example -->
+
+    <h4>Unordered List</h4>
+
+    <div class="example">
+      <ul class="list-highlight">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quo.</li>
+        <li>Reprehenderit, sit quod maxime neque nam totam provident quam veritatis?</li>
+        <li>Voluptas, deleniti perspiciatis quibusdam! Ipsum, delectus eaque provident optio debitis!</li>
+        <li>Natus, quam vel aliquam in iure distinctio veritatis animi delectus!</li>
+      </ul>
+    </div><!-- /.example -->
+
+    <div class="example">
+      <ul class="list-compact">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quo.</li>
+        <li>Reprehenderit, sit quod maxime neque nam totam provident quam veritatis?</li>
+        <li>Voluptas, deleniti perspiciatis quibusdam! Ipsum, delectus eaque provident optio debitis!</li>
+        <li>Natus, quam vel aliquam in iure distinctio veritatis animi delectus!</li>
+      </ul>
+    </div><!-- /.example -->
+
+    <h4>Definition List</h4>
+
+    <div class="example">
+      <dl>
+        <dt>Country:</dt>
+        <dd>Norway</dd>
+        <dt>Status:</dt>
+        <dd>Active</dd>
+        <dt>Formed:</dt>
+        <dd>1987</dd>
+      </dl>
+    </div><!-- /.example -->
+  </section><!-- /#typography-list -->
+
+  <section id="typography-blockquote">
+    <h3>Blockquote</h3>
+
+    <div class="example">
+      <blockquote>
+        <p>This is what I heard. Wow!</p>
+
+        <cite>"War" by Burzum</cite>
+      </blockquote>
+    </div><!-- /.example -->
+  </section><!-- /#typography-blockquote -->
+
+  <section id="typography-table">
+    <h3>Table</h3>
+
+    <div class="example">
+      <table>
+        <thead>
+          <tr>
+            <th>Lorem</th>
+            <th>Labore</th>
+            <th>Quibusdam</th>
+            <th>Doloremque</th>
+            <th>Ad</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lorem</td>
+            <td>Quisquam</td>
+            <td>Error</td>
+            <td>Totam</td>
+            <td>Necessitatibus</td>
+          </tr>
+
+          <tr>
+            <td>Lorem</td>
+            <td>Tenetur</td>
+            <td>Tenetur</td>
+            <td>Consectetur</td>
+            <td>Dolore</td>
+          </tr>
+
+          <tr>
+            <td>Lorem</td>
+            <td>Voluptas</td>
+            <td>Eaque</td>
+            <td>Ea</td>
+            <td>Doloremque</td>
+          </tr>
+
+          <tr>
+            <td>Lorem</td>
+            <td>Eveniet</td>
+            <td>Obcaecati</td>
+            <td>Nihil</td>
+            <td>Iusto</td>
+          </tr>
+
+          <tr>
+            <td>Lorem</td>
+            <td>Tempora</td>
+            <td>Libero</td>
+            <td>Veniam</td>
+            <td>Inventore</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- /.example -->
+  </section><!-- /#typography-table -->
+</section><!-- /#typography -->
+
+<section id="form">
+  <h2>Form</h2>
+
+  <section id="form-button">
+    <h3>Button</h3>
+
+    <h4>Default &amp; Primary</h4>
+
+    <div class="example">
+      <button type="button" class="primary">OK</button>
+      <button type="button">Cancel</button>
+    </div><!-- /.example -->
+
+    <h4>Highlight</h4>
+
+    <div class="example jumbotron">
+      <p><button type="button" class="highlight">Add Band</button></p>
+
+      <p><button type="button" class="highlight">Add Album</button></p>
+    </div><!-- /.example.jumbotron -->
+  </section><!-- /#form-button -->
+
+  <section id="form-input">
+    <h3>Input</h3>
+
+    <div class="example">
+      <input type="text" value="input[type=text]">
+    </div><!-- /.example -->
+  </section><!-- /#form-input -->
+
+  <section id="form-select">
+    <h3>Select</h3>
+
+    <div class="example">
+      <div class="form-select">
+        <div class="form-select-face">
+          <span class="form-select-item">Item 1 Long</span>
+          <button type="button"><i class="fa fa-caret-down"></i></button>
+        </div><!-- /form-select-face -->
+
+        <div class="form-select-dropdown">
+          <ul>
+            <li><a href="javascript:void(0);">Item 1</a></li>
+            <li><a href="javascript:void(0);">Item 2</a></li>
+            <li><a href="javascript:void(0);">Item 3</a></li>
+          </ul>
+        </div><!-- /.form-select-dropdown -->
+
+        <select hidden>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </select>
+      </div><!-- /.form-select -->
+    </div><!-- /.example -->
+  </section><!-- /#form-select -->
+
+  <section id="form-textarea">
+    <h3>Textarea</h3>
+
+    <div class="example">
+      <textarea>textarea</textarea>
+    </div><!-- /.example -->
+  </section><!-- /#form-textarea -->
+
+  <section id="form-search">
+    <h3>Search</h3>
+
+    <div class="example">
+      <form class="form-search">
+        <input type="search">
+        <i class="fa fa-search"></i>
+      </form><!-- /.form-search -->
+    </div><!-- /.example -->
+  </section><!-- /#form-search -->
+
+  <section id="form-icon">
+    <h3>Icons</h3>
+
+    <div class="example">
+      <i class="fa fa-align-justify"></i>
+      <i class="fa fa-th-list"></i>
+      <i class="fa fa-th-large"></i>
+      <i class="fa fa-search"></i>
+      <i class="fa fa-plus-circle"></i>
+      <i class="fa fa-minus-circle"></i>
+      <i class="fa fa-chevron-down"></i>
+      <i class="fa fa-caret-down"></i>
+      <i class="fa fa-angle-right"></i>
+      <i class="fa fa-times"></i>
+      <i class="fa fa-plus"></i>
+      <i class="fa fa-check"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-pencil-square"></i>
+    </div><!-- /.example -->
+  </section><!-- /#form-icon -->
+
+  <section id="form-image-upload">
+    <h3>Image Upload</h3>
+
+    <div class="example">
+      <div class="form-image large added">
+        <!-- Before adding -->
+        <div class="form-image-add"><i class="fa fa-plus"></i></div>
+
+        <!-- Added -->
+        <span class="form-image-center-helper"></span><img src="/images/band-cover.jpg" alt="Band Cover">
+        <div class="form-image-remove"><i class="fa fa-times"></i></div>
+
+        <input type="file" hidden>
+      </div><!-- /.form-image -->
+
+      <div class="form-image medium">
+        <!-- Before adding -->
+        <div class="form-image-add"><i class="fa fa-plus"></i></div>
+
+        <!-- Added -->
+        <span class="form-image-center-helper"></span><img src="/images/band-cover.jpg" alt="Band Cover">
+        <div class="form-image-remove"><i class="fa fa-times"></i></div>
+
+        <input type="file" hidden>
+      </div><!-- /.form-image -->
+
+      <div class="form-image small added">
+        <!-- Added -->
+        <span class="form-image-center-helper"></span><img src="/images/band-cover.jpg" alt="Band Cover">
+        <div class="form-image-remove"><i class="fa fa-times"></i></div>
+
+        <!-- Before adding -->
+        <div class="form-image-add"><i class="fa fa-plus"></i></div>
+        <input type="file" hidden>
+      </div><!-- /.form-image -->
+    </div><!-- /.example -->
+  </section><!-- /#form-image-upload -->
+
+  <section id="form-rating">
+    <h3>Rating</h3>
+
+    <h4>未选择</h4>
+
+    <div class="example">
+      <div class="form-rating operable">
+        <div class="form-rating-stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div><!-- /.form-rating-stars -->
+
+        <input type="range" min="1" max="5" step="1" hidden>
+      </div><!-- /.form-rating -->
+    </div><!-- /.example -->
+
+    <h4>已选择</h4>
+
+    <div class="example">
+      <div class="form-rating">
+        <div class="form-rating-stars">
+          <i class="fa fa-star active"></i>
+          <i class="fa fa-star active"></i>
+          <i class="fa fa-star active"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div><!-- /.form-rating-stars -->
+
+        <input type="range" min="1" max="5" step="1" hidden>
+      </div><!-- /.form-rating -->
+    </div><!-- /.example -->
+  </section><!-- /#form-rating -->
+</section><!-- /#form -->
+
+<section id="nav">
+  <h2>Navigation</h2>
+
+  <section id="nav-view-switch">
+    <h3>Classify Switch (top bar)</h3>
+
+    <div class="example">
+      <nav class="nav-classify-switch">
+        <ul>
+          <li class="active"><a href="javascript:void(0);">Genre</a></li>
+          <li><a href="javascript:void(0);">Band</a></li>
+        </ul>
+      </nav><!-- /.nav-classify-switch -->
+    </div><!-- /.example -->
+  </section><!-- /#nav-classify-switch -->
+
+  <section id="nav-view-switch">
+    <h3>View Switch (top bar)</h3>
+
+    <div class="example">
+      <nav class="nav-view-switch">
+        <ul>
+          <li><a href="javascript:void(0);"><i class="fa fa-align-justify"></i></a></li>
+          <li class="active"><a href="javascript:void(0);"><i class="fa fa-th-list"></i></a></li>
+          <li><a href="javascript:void(0);"><i class="fa fa-th-large"></i></a></li>
+        </ul>
+      </nav><!-- /.nav-view-switch -->
+    </div><!-- /.example -->
+  </section><!-- /#nav-view-switch -->
+
+  <section id="nav-band-switch">
+    <h3>Band Catagory Switch (sidebar)</h3>
+
+    <div class="example">
+      <nav class="nav-band-switch">
+        <ul>
+          <li class="active"><a href="javascript:void(0);">A–Z</a></li>
+          <li><a href="javascript:void(0);">Country</a></li>
+        </ul>
+      </nav><!-- /.nav-band-switch -->
+    </div><!-- /.example -->
+  </section><!-- /#nav-band-switch -->
+
+  <section id="nav-dropdown">
+    <h3>Dropdown</h3>
+
+    <div class="example">
+      <nav class="nav-dropdown">
+        <ul>
+          <li class="dropdown-heading">Heading</li>
+          <li><a href="javascript:void(0);">Item 1</a></li>
+          <li><a href="javascript:void(0);">Item 2</a></li>
+          <li><a href="javascript:void(0);">Item 3</a></li>
+        </ul>
+      </nav><!-- /.nav-dropdown -->
+    </div><!-- /.example -->
+  </section><!-- /#nav-dropdown -->
+
+  <section id="nav-side-main">
+    <h3>Sidebar (main)</h3>
+
+    <div class="example">
+      <nav class="nav-side-main">
+        <header>
+          <h2>Genre</h2>
+
+          <button type="button"><i class="fa fa-plus"></i></button>
+        </header>
+
+        <ul>
+          <li><a href="javascript:void(0);">Item 1</a></li>
+          <li class="active"><a href="javascript:void(0);">Item 2</a></li>
+          <li><a href="javascript:void(0);">Item 3</a></li>
+        </ul>
+      </nav><!-- /.nav-side-main -->
+    </div><!-- /.example -->
+  </section><!-- /#nav-side-main -->
+
+  <section id="nav-side-small">
+    <h3>Sidebar (small)</h3>
+
+    <div class="example">
+      <nav class="nav-side-small">
+        <header>
+          <h2>Genre</h2>
+        </header>
+
+        <ul>
+          <li><a href="javascript:void(0);">Item 1 <span>9</span></a></li>
+          <li class="active"><a href="javascript:void(0);">Item 2 <span>99</span></a></li>
+          <li><a href="javascript:void(0);">Item 3 <span>999</span></a></li>
+        </ul>
+      </nav><!-- /.nav-side-small -->
+    </div><!-- /.example -->
+  </section><!-- /#nav-side-small -->
+</section><!-- /#nav -->
+
+<section id="album">
+  <h2>Album View</h2>
+
+  <section id="album-large">
+    <h3>Large (grid)</h3>
+
+    <div class="example">
+      <div class="album-list large">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom Sathanas</a>
+
+            <dl>
+              <dt>Type:</dt>
+              <dd>Full length</dd>
+              <dt>Year:</dt>
+              <dd>2007</dd>
+              <dt>Label:</dt>
+              <dd>Season of mist</dd>
+              <dt>Genre:</dt>
+              <dd>Black metal</dd>
+            </dl>
+
+            <div class="album-rating">
+              <span class="album-rating-title">Rating</span>
+
+              <div class="form-rating">
+                <div class="form-rating-stars">
+                  <i class="fa fa-star active"></i>
+                  <i class="fa fa-star active"></i>
+                  <i class="fa fa-star active"></i>
+                </div><!-- /.form-rating-stars -->
+              </div><!-- /.form-rating -->
+            </div><!-- /.album-rating -->
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom Sathanas</a>
+
+            <dl>
+              <dt>Type:</dt>
+              <dd>Full length</dd>
+              <dt>Year:</dt>
+              <dd>2007</dd>
+              <dt>Label:</dt>
+              <dd>Season of mist</dd>
+              <dt>Genre:</dt>
+              <dd>Black metal</dd>
+            </dl>
+
+            <div class="album-rating">
+              <span class="album-rating-title">Rating</span>
+
+              <div class="form-rating">
+                <div class="form-rating-stars">
+                  <i class="fa fa-star active"></i>
+                  <i class="fa fa-star active"></i>
+                  <i class="fa fa-star active"></i>
+                </div><!-- /.form-rating-stars -->
+              </div><!-- /.form-rating -->
+            </div><!-- /.album-rating -->
+          </li>
+        </ul>
+      </div><!-- /.album-list-large -->
+    </div><!-- /.example -->
+  </section><!-- /#album-large -->
+
+  <section id="album-medium">
+    <h3>Medium (list)</h3>
+
+    <div class="example">
+      <div class="album-list medium">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom Sathanas</a>
+
+            <span class="album-detail">Mayhem</span>
+            <span class="album-detail">1994</span>
+
+            <div class="form-rating">
+              <div class="form-rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+              </div><!-- /.form-rating-stars -->
+            </div><!-- /.form-rating -->
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom Sathanas</a>
+
+            <span class="album-detail">Mayhem</span>
+            <span class="album-detail">1994</span>
+
+            <div class="form-rating">
+              <div class="form-rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+              </div><!-- /.form-rating-stars -->
+            </div><!-- /.form-rating -->
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom Sathanas</a>
+
+            <span class="album-detail">Mayhem</span>
+            <span class="album-detail">1994</span>
+
+            <div class="form-rating">
+              <div class="form-rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+              </div><!-- /.form-rating-stars -->
+            </div><!-- /.form-rating -->
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom Sathanas</a>
+
+            <span class="album-detail">Mayhem</span>
+            <span class="album-detail">1994</span>
+
+            <div class="form-rating">
+              <div class="form-rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+              </div><!-- /.form-rating-stars -->
+            </div><!-- /.form-rating -->
+          </li>
+        </ul>
+      </div><!-- /.album-list-medium -->
+    </div><!-- /.example -->
+  </section><!-- /#album-medium -->
+
+  <section id="album-small">
+    <h3>Small (sidebar)</h3>
+
+    <div class="example">
+      <div class="album-list small">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom <br>Sathanas</a>
+
+            <div class="form-rating">
+              <div class="form-rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+              </div><!-- /.form-rating-stars -->
+            </div><!-- /.form-rating -->
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" class="album-cover"><img src="/images/albums/mayhem-dmds.jpg" alt="De Mysteriis Dom Sathanas"></a>
+
+            <a href="javascript:void(0);" class="album-title">De Mysteriis Dom Sathanas</a>
+
+            <div class="form-rating">
+              <div class="form-rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+              </div><!-- /.form-rating-stars -->
+            </div><!-- /.form-rating -->
+          </li>
+        </ul>
+      </div><!-- /.album-list-small -->
+    </div><!-- /.example -->
+  </section><!-- /#album-small -->
+</section><!-- /#album -->
+
+{% endblock %}

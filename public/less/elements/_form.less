@@ -1,0 +1,314 @@
+/**
+ * Author: Ash
+ * Created: 2014/03/09
+ * ===================
+ * - Button
+ * - Input & Textarea
+ * - Search
+ * - Image Upload
+ */
+
+
+/** Button ========================= **/
+
+button {
+  background-color: @form-bg;
+  border: @form-border-width solid @form-default-border;
+  border-radius: (@form-element-height / 2);
+  color: @form-default-color;
+  font-weight: 700;
+  padding: ((@form-element-height - @form-border-width - @line-base) / 2) @padding-base;
+
+  &:hover {
+    background-color: @form-default-hover-bg;
+    color: @form-default-hover-color;
+  }
+
+  &.primary {
+    border-color: @form-primary-border;
+    color: @form-primary-color;
+
+    &:hover {
+      background-color: @form-primary-hover-bg;
+      color: @form-primary-hover-color;
+    }
+  }
+
+  &.highlight {
+    background-color: transparent;
+    border-color: @form-button-highlight;
+    border-radius: @form-button-highlight-border-radius;
+    color: @form-button-highlight;
+    font-size: @form-button-highlight-font-size;
+    font-weight: 400;
+    min-width: @form-button-highlight-min-width;
+    padding: ((@form-button-highlight-height - @form-border-width - @line-base) / 2) (@padding-base * 2);
+
+    &:hover {
+      background-color: @form-button-highlight;
+      color: @form-button-highlight-hover-color;
+    }
+  }
+}
+
+//  Button end ---------------------  //
+
+
+/** Input & Textarea =============== **/
+
+input[type=text],
+input[type=search],
+textarea,
+.form-select-face {
+  border: @form-border-width solid @form-default-border;
+  border-radius: @form-input-border-radius;
+  color: @form-input-color;
+  line-height: @line-base;
+  padding: ((@form-element-height - @form-border-width - @line-base) / 2) 4px;
+
+  &:focus {
+    border-color: @form-input-focus-border;
+    color: @form-input-focus-color;
+  }
+
+  .ie8 & {
+    line-height: normal;
+  }
+}
+
+input[type=text] {
+  width: @form-input-width;
+}
+
+textarea {
+  height: @form-textarea-height;
+  width: @form-textarea-width;
+}
+
+//  Input & Textarea end -----------  //
+
+
+/** Select ========================= **/
+
+.form-select,
+.form-select-face {
+  display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.form-select {
+  position: relative;
+}
+
+.form-select-face {
+  cursor: pointer;
+  min-width: @form-input-width;
+  position: relative;
+  white-space: nowrap;
+
+  > button {
+    .button-transparent();
+    position: absolute;
+      right: 7px;
+  }
+}
+
+.form-select-item {
+  padding-right: 18px;
+}
+
+.form-select-dropdown {
+  &:extend(.dropdown all);
+  display: none;
+  padding-top: @form-border-width;
+  position: absolute;
+    z-index: 1;
+
+  .form-select:hover > & {
+    display: block;
+  }
+}
+
+//  Select end ---------------------  //
+
+
+/** Search ========================= **/
+
+.form-search {
+  position: relative;
+
+  > .fa-search {
+    color: @form-search-glass;
+    font-size: 1.2em;
+    position: absolute;
+      left: 10px;
+      top: 7px;
+
+    .ie8 & {
+      left: 9px;
+      top: 6px;
+    }
+  }
+
+  > input[type=search] {
+    background-color: @form-search-border;
+    border-color: @form-search-border;
+    border-radius: (@form-element-height / 2);
+    color: @form-input-color;
+    padding-left: (@padding-base * 2);
+    width: @form-search-width;
+
+    &:focus {
+      background-color: @form-search-focus-bg;
+      border-color: @form-search-focus-border;
+      color: @form-search-focus-color;
+
+      + .fa-search {
+        color: @form-search-focus-icon;
+      }
+    }
+  }
+}
+
+//  Search end --------------------  //
+
+
+/** Image Upload ================== **/
+
+.form-image {
+  background-color: @form-image-bg;
+  overflow: hidden;
+  position: relative;
+
+  &.large {
+    height: @image-size-xlarge;
+    width: @image-size-xlarge;
+  }
+
+  &.medium {
+    height: @image-size-medium;
+    width: @image-size-medium;
+  }
+
+  &.small {
+    height: @image-size-small;
+    width: @image-size-small;
+  }
+
+  > img {
+    vertical-align: middle;
+  }
+}
+
+.form-image-center-helper {
+  display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.form-image-add,
+.form-image-remove {
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+    top: 0;
+  text-align: center;
+  width: 100%;
+
+  > .fa {
+    color: @form-image-upload-icon;
+
+    .large > & {
+      font-size: (@image-size-xlarge * 0.6);
+      line-height: (@image-size-xlarge * 1.05);
+    }
+
+    .medium > & {
+      font-size: (@image-size-medium * 0.6);
+      line-height: @image-size-medium * 1.05;
+    }
+
+    .small > & {
+      font-size: (@image-size-small * 0.6);
+      line-height: (@image-size-small * 1.05);
+    }
+  }
+}
+
+.form-image-add {
+  background-color: @form-image-add-bg;
+  z-index: 1;
+
+  .added > & {
+    display: none;
+  }
+
+  &:hover {
+    background-color: @form-image-add-hover-bg;
+  }
+}
+
+.form-image-remove {
+  background-color: @form-image-remove-bg;
+  display: none;
+  opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+    filter: alpha(opacity=0);
+
+  .added > & {
+    display: block;
+  }
+
+  &:hover {
+    opacity: 0.7;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=70)";
+      filter: alpha(opacity=70);
+  }
+}
+
+//  Image Upload end --------------  //
+
+
+/** Rating ======================== **/
+
+.form-rating,
+.form-rating-stars {
+  display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  height: @form-rating-star-size;
+}
+
+.form-rating-stars {
+  font-size: 0;
+
+  > .fa {
+    color: @form-rating-star-color;
+    display: inline-block;
+      *display: inline;
+      *zoom: 1;
+    font-size: @form-rating-star-size;
+    padding: 0 0.1em;
+
+    .operable > &:hover ~ .fa {
+      color: @form-rating-star-color;
+    }
+
+    &.active {
+      color: @form-rating-star-hover-color;
+    }
+  }
+
+  .operable > &:hover {
+    cursor: pointer;
+
+    > .fa {
+      color: @form-rating-star-hover-color;
+    }
+  }
+}
+
+//  Rating end --------------------  //

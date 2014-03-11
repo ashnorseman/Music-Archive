@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- Created: 2014/03/09 -->
+
+<!--[if IE 7]> <html class="no-js ie lte9 lte8 lte7 ie7"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie lte9 lte8 ie8">      <![endif]-->
+<!--[if IE 9]> <html class="no-js ie lte9 ie9">           <![endif]-->
+
+<html class="no-js" lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Ash Norseman">
+
+<link rel="stylesheet" href="/css/base.css">
+{% block ownStyles %}
+{% endblock %}
+
+<script src="/js/lib/modernizr-custom.js"></script>
+<script data-main="/js/boot" src="/js/lib/require-2.1.11.js"></script>
+
+<title>{{ title|title }} - Music Archive</title>
+
+<body> <!-- body start -->
+
+<header class="header-page">
+  <div class="header-page-logo">
+    <a href="/" class=""><span>Music Archive</span></a>
+  </div><!-- /.header-page-logo -->
+
+  <nav class="nav-classify-switch">
+    <ul>
+      <li {% if title === "genre" %} class="active" {% endif %}><a href="javascript:void(0);">Genre</a></li>
+      <li {% if title === "band" %} class="active" {% endif %}><a href="javascript:void(0);">Band</a></li>
+    </ul>
+  </nav><!-- /.nav-classify-switch -->
+
+  <div class="pull-right">
+    <nav class="nav-view-switch">
+      <ul>
+        <li {% if viewType === "table" %} class="active" {% endif %}><a href="javascript:void(0);"><i class="fa fa-align-justify"></i></a></li>
+        <li {% if viewType === "list" %} class="active" {% endif %}><a href="javascript:void(0);"><i class="fa fa-th-list"></i></a></li>
+        <li {% if viewType === "grid" %} class="active" {% endif %}><a href="javascript:void(0);"><i class="fa fa-th-large"></i></a></li>
+      </ul>
+    </nav><!-- /.nav-view-switch -->
+
+    <form class="form-search">
+      <input type="search">
+      <i class="fa fa-search"></i>
+    </form><!-- /.form-search -->
+  </div><!-- /.pull-right -->
+</header><!-- /.header-page -->
+
+<div class="jumbotron">
+  <h1>{{ pageHeading|title }}</h1>
+  <p><button type="button" class="highlight">Add Band</button></p>
+
+  <p><button type="button" class="highlight">Add Album</button></p>
+</div><!-- /.jumbotron -->
+
+<div class="content">
+  {% block content %}
+  {% endblock %}
+</div><!-- /.content -->

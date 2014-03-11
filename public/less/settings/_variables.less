@@ -1,0 +1,261 @@
+/**
+ * Author: Ash
+ * Created: 2014/03/09
+ * ===================
+ * - Colors
+ * - Sizes
+ * - Typography
+ * - Form
+ * - Dropdown
+ * - Jumbotron
+ * - Nav
+ * - Album
+ * - Layout
+ */
+
+
+/** Colors ========================= **/
+
+@color-gray-darkest:  lighten(#000, 25%);
+@color-gray-darker:   lighten(#000, 45%);
+@color-gray-dark:     lighten(#000, 55%);
+@color-gray:          lighten(#000, 65%);
+@color-gray-light:    lighten(#000, 85%);
+@color-gray-lighter:  lighten(#000, 90%);
+@color-gray-lightest: lighten(#000, 96%);
+
+@color-primary:           #a66081;
+@color-primary-light:     #b55782;
+@color-primary-lighter:   #cd749d;
+@color-primary-lightest:  #d594b1;
+
+//  Colors end ---------------------  //
+
+
+/** Sizes ========================== **/
+
+@padding-base: 15px;
+
+@image-size-xlarge: 200px;
+@image-size-large:  150px;
+@image-size-medium: 100px;
+@image-size-small:  60px;
+
+//  Sizes end ----------------------  //
+
+
+/** Typography ===================== **/
+
+// Text
+@font-base:    14px;
+@font-large:   16px;
+@font-larger:  18px;
+
+@text-color:   @color-gray-darkest;
+
+@line-base:    20px;
+@para-margin:  (@line-base / 2);
+
+// Link
+@link-color:        @color-primary;
+@link-hover-color:  @color-primary-light;
+
+// Headings
+@h1-font-size: 24px;
+@h2-font-size: 22px;
+@h3-font-size: 18px;
+
+@h1-color: @color-gray-darkest;
+@h2-color: @color-gray-darker;
+@h3-color: @color-gray-dark;
+
+// List
+@list-height:         (@line-base * 1.5);
+@list-compact-height: @line-base;
+@list-highlight-dot:  @color-primary-light;
+@list-compact-dash:   @text-color;
+
+@dd-margin-left:      0.5em;
+
+// Blockquote
+@blockquote-font-size:        @font-large;
+@blockquote-top-padding:      (@line-base / 2);
+@blockquote-cite-margin-top:  (@line-base / 2);
+
+// Table
+@td-top-padding:  (@line-base / 2);
+@td-left-padding: @padding-base;
+
+@th-bg:           @color-gray-light;
+@td-alt-bg:       @color-gray-lightest;
+@td-hover-bg:     @color-primary-lighter;
+@td-hover-color:  #fff;
+
+//  Typography end -----------------  //
+
+
+/** Form =========================== **/
+
+@form-border-width: 2px;
+@form-element-height: (@line-base * 1.5);
+
+@form-bg:             #fff;
+@form-default-color:  @color-gray;
+@form-default-border: @color-gray-light;
+@form-default-hover-bg:     @color-gray-light;
+@form-default-hover-color:  @color-gray-darker;
+
+@form-primary-color:  @color-primary;
+@form-primary-border: @color-primary-light;
+@form-primary-hover-bg:     @color-primary-light;
+@form-primary-hover-color:  #fff;
+
+@form-button-highlight:               #fff;
+@form-button-highlight-border-radius: 4px;
+@form-button-highlight-height:        (@line-base * 2);
+@form-button-highlight-font-size:     @font-larger;
+@form-button-highlight-hover-color:   @form-primary-color;
+@form-button-highlight-min-width:     85px;
+
+@form-input-border-radius:  5px;
+@form-input-color:          @color-gray-darker;
+@form-input-focus-border:   @color-primary-lighter;
+@form-input-focus-color:    @color-primary;
+@form-input-width:          150px;
+
+@form-textarea-height:  (@line-base * 5);
+@form-textarea-width:   90%;
+
+@form-select-drop-bg: #fff;
+
+@form-search-border:    @color-gray-lighter;
+@form-search-glass:     @color-gray;
+@form-search-focus-bg:  #fff;
+@form-search-focus-border:  @color-gray-lighter;
+@form-search-focus-color:   @color-primary-light;
+@form-search-focus-icon:    @color-gray-light;
+@form-search-width:     150px;
+
+@form-image-bg:           @color-gray-darkest;
+@form-image-add-bg:       @color-gray-light;
+@form-image-add-hover-bg: @color-gray;
+@form-image-remove-bg:    #000;
+@form-image-upload-icon:  #fff;
+
+@form-rating-star-color:        @color-gray;
+@form-rating-star-hover-color:  @color-primary-lightest;
+@form-rating-star-size:         @line-base;
+
+//  Form end -----------------------  //
+
+
+/** Dropdown ======================= **/
+
+@dropdown-link-color:     @color-gray-darker;
+@dropdown-link-hover-bg:  @color-gray-lightest;
+
+//  Dropdown end -------------------  //
+
+
+/** Nav ====================== **/
+
+// Classify Switch
+@nav-classify-switch-color:         @color-gray;
+@nav-classify-switch-font-size:     @font-large;
+@nav-classify-switch-left-padding:  (@padding-base / 2);
+@nav-classify-switch-border-width:  5px;
+@nav-classify-switch-hover-border:  mix(@color-gray, @color-gray-lighter);
+@nav-classify-switch-active-color:  @color-primary;
+
+// View Switch
+@nav-view-switch-color:         @color-gray-light;
+@nav-view-switch-size:          @font-larger;
+@nav-view-switch-active-color:  @color-gray;
+
+// Band Catagory Switch
+@nav-band-switch-color:         @color-gray-darker;
+@nav-band-switch-sep-color:     @color-gray;
+@nav-band-switch-active-color:  @color-primary;
+
+// Dropdown
+@nav-dropdown-heading-size:   12px;
+@nav-dropdown-heading-color:  @color-gray;
+@nav-dropdown-left-padding:   10px;
+
+// Side Main
+@nav-side-main-bg:            @color-gray-lightest;
+@nav-side-main-color:         @color-gray-darkest;
+@nav-side-main-hover-bg:      lighten(@color-gray-lighter, 3%);
+@nav-side-main-active-bg:     @color-gray-light;
+
+@nav-side-main-line-height:   (@line-base * 2);
+@nav-side-main-left-padding:  (@padding-base * 2);
+
+@nav-side-main-header-border: @color-gray-light;
+
+// Side Small
+@nav-side-small-color:    @color-gray-darkest;
+@nav-side-small-hover-bg: lighten(@color-gray-lighter, 3%);
+@nav-side-small-active-color: @color-primary;
+@nav-side-small-span-color:   @color-gray;
+
+//  Nav end ------------------  //
+
+
+/** Album ========================== **/
+
+// General
+@album-title-color:       @color-gray-dark;
+@album-title-hover-color: @color-primary;
+
+// Large
+@album-large-left-padding:      (@padding-base * 2);
+@album-large-top-padding:       (@line-base / 2);
+@album-large-cover-size:        @image-size-large;
+@album-large-cover-margin:      (@line-base * 2);
+@album-large-title-size:        24px;
+@album-large-detail-color:      @color-gray-dark;
+@album-large-rating-bg:         @color-gray-lightest;
+@album-large-rating-width:      120px;
+@album-large-rating-title:      @color-gray-dark;
+@album-large-rating-title-size: 16px;
+
+// Medium
+@album-medium-right-padding:    (@padding-base * 2);
+@album-medium-top-padding:      (@line-base / 2);
+@album-medium-cover-size:       @image-size-medium;
+@album-medium-cover-margin:     @line-base;
+@album-medium-title-size:       18px;
+@album-medium-detail-color:     @color-gray;
+@album-medium-detail-line:      (@line-base / 2 * 2.5);
+
+// Small
+@album-small-left-padding:  (@padding-base * 2);
+@album-small-top-padding:   (@line-base / 2);
+@album-small-cover-margin:  @padding-base;
+@album-small-cover-size:    @image-size-small;
+@album-small-title-size:    14px;
+
+//  Album end ----------------------  //
+
+
+/** Jumbotron ====================== **/
+
+@jumbo-bg: "/images/style/jumbo-bg.jpg";
+@jumbo-height:      120px;
+
+@jumbo-h1-color:    #fff;
+@jumbo-quote-color: #fff;
+@jumbo-cite-color:  #fff;
+
+//  Jumbotron end ------------------  //
+
+
+/** Layout ========================= **/
+
+@header-height:     60px;
+@header-logo-size:  24px;
+
+@sidebar-width:     260px;
+
+//  Layout end ---------------------  //

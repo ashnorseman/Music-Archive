@@ -1,0 +1,48 @@
+/**
+ * Author: Ash
+ * Created: 2014/03/11
+ * ===================
+ * - Header
+ */
+
+
+/** Header ========================= **/
+
+.header-page {
+  height: @header-height;
+
+  > .nav-classify-switch {
+    margin-left: -0.3em;
+    display: inline-block;
+      *display: inline;
+      *zoom: 1;
+    vertical-align: bottom;
+  }
+
+  .nav-view-switch,
+  .form-search {
+    float: left;
+    margin-top: (@header-height - @form-element-height) / 2;
+  }
+
+  .form-search {
+    margin-left: @padding-base;
+    margin-right: @padding-base;
+  }
+}
+
+.header-page-logo {
+  display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  padding: 0 @padding-base;
+  width: (@sidebar-width - @padding-base * 2);
+
+  > a {
+    line-height: @header-height;
+    font-size: @header-logo-size;
+    font-weight: 700;
+  }
+}
+
+//  Header end ---------------------  //

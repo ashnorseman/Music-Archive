@@ -1,0 +1,170 @@
+/**
+ * Author: Ash
+ * Created: 2014/03/11
+ * ===================
+ * - General
+ * - Large
+ * - Medium
+ * - Small
+ */
+
+
+/** General ======================== **/
+
+.album-list {
+
+  > ul {
+    list-style: none;
+
+    > li {
+      &:extend(.clearfix all);
+    }
+  }
+
+  .album-cover {
+    float: left;
+
+    > img {
+      vertical-align: top;
+    }
+  }
+
+  .album-title {
+    color: @album-title-color;
+    display: block;
+    font-weight: 700;
+
+    &:hover {
+      color: @album-title-hover-color;
+    }
+  }
+}
+
+//  General end --------------------  //
+
+
+/** Large ========================== **/
+
+.album-list.large {
+
+  > ul {
+    padding: @album-large-top-padding 0;
+
+    > li {
+      padding: @album-large-top-padding @album-large-left-padding;
+      position: relative;
+
+      > dl {
+        color: @album-large-detail-color;
+        float: left;
+      }
+    }
+  }
+
+  .album-cover {
+    margin-right: @album-large-cover-margin;
+    width: @album-large-cover-size;
+  }
+
+  .album-title {
+    font-size: @album-large-title-size;
+    margin-top: -(@line-base / 8);
+  }
+
+  .album-rating {
+    background-color: @album-large-rating-bg;
+    border-radius: 10px;
+    padding: (@album-large-top-padding / 2) (@album-large-left-padding / 2);
+    position: absolute;
+      bottom: @album-large-top-padding;
+      right: @album-large-left-padding;
+    text-align: center;
+    width: @album-large-rating-width;
+  }
+
+  .album-rating-title {
+    color: @album-large-rating-title;
+    display: block;
+    font-size: @album-large-rating-title-size;
+    font-weight: 700;
+  }
+}
+
+//  Large end ----------------------  //
+
+
+/** Medium ========================= **/
+
+.album-list.medium {
+
+  > ul {
+    &:extend(.clearfix all);
+    padding: @album-medium-top-padding 0;
+
+    > li {
+      float: left;
+      padding: @album-medium-top-padding  0;
+      width: 50%;
+    }
+  }
+
+  .album-cover {
+    margin-right: @album-medium-cover-margin;
+    width: @album-medium-cover-size;
+  }
+
+  .album-title {
+    font-size: @album-medium-title-size;
+    margin-top: -(@line-base / 4);
+  }
+
+  .album-detail {
+    color: @album-medium-detail-color;
+    display: block;
+    line-height: @album-medium-detail-line;
+    padding-right: @album-medium-right-padding;
+  }
+}
+
+//  Medium end ---------------------  //
+
+
+/** Small ========================== **/
+
+.album-list.small {
+
+  > ul {
+    &:extend(.clearfix all);
+    padding: @album-small-top-padding 0;
+
+    > li {
+      padding: @album-small-top-padding @album-small-left-padding;
+    }
+  }
+
+  .album-cover {
+    margin-right: @album-small-cover-margin;
+    width: @album-small-cover-size;
+  }
+
+  .album-title {
+    font-size: @album-small-title-size;
+    height: (@line-base * 2);
+    line-height: @line-base;
+    margin-top: -(@line-base / 8);
+    padding-right: @album-medium-right-padding;
+  }
+
+  .form-rating {
+    display: block;
+  }
+
+  .form-rating-stars {
+
+    > .fa {
+      font-size: @font-base;
+    }
+  }
+}
+
+//  Small end ----------------------  //

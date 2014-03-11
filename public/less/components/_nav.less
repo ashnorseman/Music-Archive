@@ -1,0 +1,233 @@
+/**
+ * Author: Ash
+ * Created: 2014/03/10
+ * ===================
+ * - Classify Switch
+ * - View Switch
+ * - Band Catagory Switch
+ * - Dropdown
+ * - Side Main
+ * - Side Small
+ */
+
+nav {
+
+  > ul,
+  > ol {
+    list-style: none;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+
+/** Classify Switch ==================== **/
+
+.nav-classify-switch {
+
+  > ul {
+    &:extend(.list-horizontal all);
+
+    > li {
+      margin-right: @padding-base;
+
+      > a {
+        border-bottom: @nav-classify-switch-border-width solid transparent;
+        color: @nav-classify-switch-color;
+        font-size: @nav-classify-switch-font-size;
+        font-weight: 700;
+        padding: 0 @nav-classify-switch-left-padding (@line-base / 2 - @nav-classify-switch-border-width);
+
+        &:hover {
+          border-color: @nav-classify-switch-hover-border;
+        }
+      }
+
+      &.active {
+
+        > a {
+          border-color: @nav-classify-switch-active-color;
+          color: @nav-classify-switch-active-color;
+        }
+      }
+    }
+  }
+}
+
+//  Classify Switch end ----------------  //
+
+
+/** View Switch ======================== **/
+
+.nav-view-switch {
+
+  > ul {
+    &:extend(.list-horizontal all);
+
+    > li {
+      margin-right: (@padding-base / 2);
+
+      > a {
+        color: @nav-view-switch-color;
+        font-size: @nav-view-switch-size;
+        line-height: (@form-element-height * 1.1);
+      }
+
+      &.active {
+
+        > a {
+          color: @nav-view-switch-active-color;
+        }
+      }
+    }
+  }
+}
+
+//  View Switch end --------------------  //
+
+
+/** Band Catagory Switch =============== **/
+
+.nav-band-switch {
+
+  > ul {
+    &:extend(.list-horizontal all);
+
+    > li {
+
+      > a {
+        display: inline;
+        color: @nav-band-switch-color;
+      }
+
+      &:before {
+        color: @nav-band-switch-sep-color;
+        content: "/";
+        margin: 0 5px;
+      }
+
+      &:first-child {
+
+        &:before {
+          content: "";
+          margin: 0;
+        }
+      }
+
+      &.active {
+
+        > a {
+          color: @nav-band-switch-active-color;
+        }
+      }
+    }
+  }
+}
+
+//  Band Catagory Switch end -----------  //
+
+
+/** Dropdown =========================== **/
+
+.nav-dropdown {
+  &:extend(.dropdown all);
+
+  > ul {
+
+    > li {
+
+      > a {
+        padding-left: @nav-dropdown-left-padding;
+        padding-right: @nav-dropdown-left-padding;
+      }
+    }
+  }
+}
+
+//  Dropdown end -----------------------  //
+
+
+/** Side Main =========================== **/
+
+.nav-side-main {
+  background-color: @nav-side-main-bg;
+
+  > header {
+    &:extend(.side-bar-heading all);
+  }
+
+  > ul {
+
+    > li {
+
+      > a {
+        background-color: @nav-side-main-bg;
+        color: @nav-side-main-color;
+        line-height: @nav-side-main-line-height;
+        padding: 0 @nav-side-main-left-padding;
+
+        &:hover {
+          background-color: @nav-side-main-hover-bg;
+        }
+      }
+
+      &.active {
+
+        > a {
+          background-color: @nav-side-main-active-bg;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+//  Side Main end -----------------------  //
+
+
+/** Side Small ========================== **/
+
+.nav-side-small {
+  background-color: @nav-side-main-bg;
+
+  > header {
+    &:extend(.side-bar-heading all);
+  }
+
+  > ul {
+    margin: (@line-base / 2 * 1.5) 0 0;
+
+    > li {
+
+      > a {
+        color: @nav-side-small-color;
+        padding: 0 @nav-side-main-left-padding;
+
+        span {
+          color: @nav-side-small-span-color;
+          float: right;
+        }
+
+        &:hover {
+          background-color: @nav-side-small-hover-bg;
+        }
+      }
+
+      &.active {
+
+        > a {
+          color: @nav-side-small-active-color;
+          font-weight: 700;
+
+          > span {
+            color: @nav-side-small-active-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  Side Small end ----------------------  //
